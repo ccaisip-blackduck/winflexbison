@@ -609,7 +609,7 @@ int filter_fix_linedirs (struct filter *chain)
 */
 
 	/* CC: Polaris/Coverity SAST code fix, free buf */
-	free(buf);
+	/* free(buf); */
 
 	return 0;
 }
