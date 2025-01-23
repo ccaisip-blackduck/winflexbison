@@ -1,0 +1,8 @@
+capture:
+  build:
+#    clean-command: 
+    build-command: BuildVS2022.bat
+analyze:
+  checkers:
+    webapp-security:
+      enabled: true
