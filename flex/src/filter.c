@@ -607,6 +607,10 @@ int filter_fix_linedirs (struct filter *chain)
 		lerr (_("error closing output file %s"),
 			outfilename ? outfilename : "<stdout>");
 */
+
+	/* CC: Polaris/Coverity SAST code fix, free buf */
+	free(buf);
+
 	return 0;
 }
 
