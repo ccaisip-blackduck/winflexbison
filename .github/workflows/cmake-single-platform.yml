@@ -35,6 +35,7 @@ jobs:
       # Build your program with the given configuration
       # run: cmake --build ${{github.workspace}}/build --config ${{env.BUILD_TYPE}}
       # CC: change to use the batch file
+      shell: cmd
       run: BuildVS2022.bat
 
     - name: Test
